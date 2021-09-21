@@ -12,7 +12,7 @@ namespace AccesoDatos
 {
     public class ConexionBD
     {
-        private SqlConnection Conexion = new SqlConnection("Server: DESKTOP-PJP3S88;Database:bd_empleados;Integrated Security=true");
+        private SqlConnection Conexion = new SqlConnection("Data Source=DESKTOP-PJP3S88;Initial Catalog=bd_empleados;Integrated Security=True");
      
         public SqlConnection AbrirConexion()
         {

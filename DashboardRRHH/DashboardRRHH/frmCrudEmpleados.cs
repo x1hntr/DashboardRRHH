@@ -22,5 +22,7 @@ namespace DashboardRRHH
             EmpleadoCN empleado = new EmpleadoCN();
             dgvEmpleados.DataSource = empleado.mostrarEmpleados();
         }
+
+     
     }
 }

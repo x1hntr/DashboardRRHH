@@ -31,17 +31,17 @@ namespace DashboardRRHH
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnEmpleados = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnDepartamentos = new System.Windows.Forms.Button();
+            this.btnResumen = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbLugar = new System.Windows.Forms.Label();
             this.lbFecha = new System.Windows.Forms.Label();
             this.lbHora = new System.Windows.Forms.Label();
             this.panelContenedor = new System.Windows.Forms.Panel();
-            this.horaFecha = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.btnEmpleados = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnDepartamentos = new System.Windows.Forms.Button();
-            this.btnResumen = new System.Windows.Forms.Button();
+            this.horaFecha = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelContenedor.SuspendLayout();
@@ -49,6 +49,7 @@ namespace DashboardRRHH
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnEmpleados);
             this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Controls.Add(this.btnDepartamentos);
@@ -56,81 +57,8 @@ namespace DashboardRRHH
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(216, 533);
+            this.panel1.Size = new System.Drawing.Size(216, 561);
             this.panel1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lbLugar);
-            this.panel2.Controls.Add(this.lbFecha);
-            this.panel2.Controls.Add(this.lbHora);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(216, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(710, 100);
-            this.panel2.TabIndex = 1;
-            // 
-            // lbLugar
-            // 
-            this.lbLugar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lbLugar.AutoSize = true;
-            this.lbLugar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(64)))));
-            this.lbLugar.Font = new System.Drawing.Font("Century Gothic", 24F);
-            this.lbLugar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(92)))), ((int)(((byte)(231)))));
-            this.lbLugar.Location = new System.Drawing.Point(410, 25);
-            this.lbLugar.Name = "lbLugar";
-            this.lbLugar.Size = new System.Drawing.Size(112, 39);
-            this.lbLugar.TabIndex = 2;
-            this.lbLugar.Text = "label2";
-            // 
-            // lbFecha
-            // 
-            this.lbFecha.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbFecha.AutoSize = true;
-            this.lbFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(64)))));
-            this.lbFecha.Font = new System.Drawing.Font("Century Gothic", 18F);
-            this.lbFecha.ForeColor = System.Drawing.Color.White;
-            this.lbFecha.Location = new System.Drawing.Point(15, 50);
-            this.lbFecha.Name = "lbFecha";
-            this.lbFecha.Size = new System.Drawing.Size(86, 30);
-            this.lbFecha.TabIndex = 1;
-            this.lbFecha.Text = "label3";
-            // 
-            // lbHora
-            // 
-            this.lbHora.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.lbHora.AutoSize = true;
-            this.lbHora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(64)))));
-            this.lbHora.Font = new System.Drawing.Font("Century Gothic", 25F);
-            this.lbHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(92)))), ((int)(((byte)(231)))));
-            this.lbHora.Location = new System.Drawing.Point(15, 9);
-            this.lbHora.Name = "lbHora";
-            this.lbHora.Size = new System.Drawing.Size(116, 40);
-            this.lbHora.TabIndex = 0;
-            this.lbHora.Text = "label2";
-            // 
-            // panelContenedor
-            // 
-            this.panelContenedor.Controls.Add(this.label1);
-            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenedor.Location = new System.Drawing.Point(216, 100);
-            this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(710, 433);
-            this.panelContenedor.TabIndex = 2;
-            // 
-            // horaFecha
-            // 
-            this.horaFecha.Enabled = true;
-            this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(220, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
             // 
             // btnEmpleados
             // 
@@ -143,9 +71,9 @@ namespace DashboardRRHH
             this.btnEmpleados.ForeColor = System.Drawing.Color.White;
             this.btnEmpleados.Image = global::DashboardRRHH.Properties.Resources.trabajo_en_equipo;
             this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmpleados.Location = new System.Drawing.Point(6, 190);
+            this.btnEmpleados.Location = new System.Drawing.Point(6, 203);
             this.btnEmpleados.Name = "btnEmpleados";
-            this.btnEmpleados.Size = new System.Drawing.Size(204, 39);
+            this.btnEmpleados.Size = new System.Drawing.Size(202, 39);
             this.btnEmpleados.TabIndex = 5;
             this.btnEmpleados.Text = "Empleados";
             this.btnEmpleados.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -164,9 +92,9 @@ namespace DashboardRRHH
             this.btnSalir.ForeColor = System.Drawing.Color.White;
             this.btnSalir.Image = global::DashboardRRHH.Properties.Resources.flecha_de_regreso;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(12, 482);
+            this.btnSalir.Location = new System.Drawing.Point(12, 508);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(195, 39);
+            this.btnSalir.Size = new System.Drawing.Size(193, 39);
             this.btnSalir.TabIndex = 4;
             this.btnSalir.Text = "Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -184,9 +112,9 @@ namespace DashboardRRHH
             this.btnDepartamentos.ForeColor = System.Drawing.Color.White;
             this.btnDepartamentos.Image = global::DashboardRRHH.Properties.Resources.departamento;
             this.btnDepartamentos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDepartamentos.Location = new System.Drawing.Point(6, 145);
+            this.btnDepartamentos.Location = new System.Drawing.Point(6, 158);
             this.btnDepartamentos.Name = "btnDepartamentos";
-            this.btnDepartamentos.Size = new System.Drawing.Size(204, 39);
+            this.btnDepartamentos.Size = new System.Drawing.Size(202, 39);
             this.btnDepartamentos.TabIndex = 3;
             this.btnDepartamentos.Text = "Departamentos";
             this.btnDepartamentos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -204,21 +132,95 @@ namespace DashboardRRHH
             this.btnResumen.ForeColor = System.Drawing.Color.White;
             this.btnResumen.Image = global::DashboardRRHH.Properties.Resources.repetir;
             this.btnResumen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnResumen.Location = new System.Drawing.Point(3, 100);
+            this.btnResumen.Location = new System.Drawing.Point(3, 113);
             this.btnResumen.Name = "btnResumen";
-            this.btnResumen.Size = new System.Drawing.Size(204, 39);
+            this.btnResumen.Size = new System.Drawing.Size(202, 39);
             this.btnResumen.TabIndex = 2;
             this.btnResumen.Text = "Resumen";
             this.btnResumen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnResumen.UseVisualStyleBackColor = true;
             this.btnResumen.Click += new System.EventHandler(this.btnResumen_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.lbLugar);
+            this.panel2.Controls.Add(this.lbFecha);
+            this.panel2.Controls.Add(this.lbHora);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(216, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(768, 100);
+            this.panel2.TabIndex = 1;
+            // 
+            // lbLugar
+            // 
+            this.lbLugar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbLugar.AutoSize = true;
+            this.lbLugar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(64)))));
+            this.lbLugar.Font = new System.Drawing.Font("Century Gothic", 24F);
+            this.lbLugar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(92)))), ((int)(((byte)(231)))));
+            this.lbLugar.Location = new System.Drawing.Point(438, 25);
+            this.lbLugar.Name = "lbLugar";
+            this.lbLugar.Size = new System.Drawing.Size(112, 39);
+            this.lbLugar.TabIndex = 2;
+            this.lbLugar.Text = "label2";
+            // 
+            // lbFecha
+            // 
+            this.lbFecha.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbFecha.AutoSize = true;
+            this.lbFecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(64)))));
+            this.lbFecha.Font = new System.Drawing.Font("Century Gothic", 18F);
+            this.lbFecha.ForeColor = System.Drawing.Color.White;
+            this.lbFecha.Location = new System.Drawing.Point(15, 49);
+            this.lbFecha.Name = "lbFecha";
+            this.lbFecha.Size = new System.Drawing.Size(86, 30);
+            this.lbFecha.TabIndex = 1;
+            this.lbFecha.Text = "label3";
+            // 
+            // lbHora
+            // 
+            this.lbHora.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.lbHora.AutoSize = true;
+            this.lbHora.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(64)))));
+            this.lbHora.Font = new System.Drawing.Font("Century Gothic", 25F);
+            this.lbHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(92)))), ((int)(((byte)(231)))));
+            this.lbHora.Location = new System.Drawing.Point(15, 8);
+            this.lbHora.Name = "lbHora";
+            this.lbHora.Size = new System.Drawing.Size(116, 40);
+            this.lbHora.TabIndex = 0;
+            this.lbHora.Text = "label2";
+            // 
+            // panelContenedor
+            // 
+            this.panelContenedor.Controls.Add(this.label1);
+            this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenedor.Location = new System.Drawing.Point(216, 100);
+            this.panelContenedor.Name = "panelContenedor";
+            this.panelContenedor.Size = new System.Drawing.Size(768, 461);
+            this.panelContenedor.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(220, 46);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
+            // 
+            // horaFecha
+            // 
+            this.horaFecha.Enabled = true;
+            this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(926, 533);
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
