@@ -56,7 +56,7 @@ namespace DashboardRRHH
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(194, 450);
+            this.panel1.Size = new System.Drawing.Size(194, 533);
             this.panel1.TabIndex = 0;
             // 
             // btnEmpleados
@@ -70,7 +70,7 @@ namespace DashboardRRHH
             this.btnEmpleados.ForeColor = System.Drawing.Color.White;
             this.btnEmpleados.Image = global::DashboardRRHH.Properties.Resources.trabajo_en_equipo;
             this.btnEmpleados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmpleados.Location = new System.Drawing.Point(12, 203);
+            this.btnEmpleados.Location = new System.Drawing.Point(12, 244);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Size = new System.Drawing.Size(173, 39);
             this.btnEmpleados.TabIndex = 5;
@@ -91,7 +91,7 @@ namespace DashboardRRHH
             this.btnSalir.ForeColor = System.Drawing.Color.White;
             this.btnSalir.Image = global::DashboardRRHH.Properties.Resources.flecha_de_regreso;
             this.btnSalir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalir.Location = new System.Drawing.Point(12, 399);
+            this.btnSalir.Location = new System.Drawing.Point(12, 482);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(173, 39);
             this.btnSalir.TabIndex = 4;
@@ -111,7 +111,7 @@ namespace DashboardRRHH
             this.btnDepartamentos.ForeColor = System.Drawing.Color.White;
             this.btnDepartamentos.Image = global::DashboardRRHH.Properties.Resources.departamento;
             this.btnDepartamentos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDepartamentos.Location = new System.Drawing.Point(12, 158);
+            this.btnDepartamentos.Location = new System.Drawing.Point(12, 199);
             this.btnDepartamentos.Name = "btnDepartamentos";
             this.btnDepartamentos.Size = new System.Drawing.Size(173, 39);
             this.btnDepartamentos.TabIndex = 3;
@@ -130,7 +130,7 @@ namespace DashboardRRHH
             this.btnResumen.ForeColor = System.Drawing.Color.White;
             this.btnResumen.Image = global::DashboardRRHH.Properties.Resources.repetir;
             this.btnResumen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnResumen.Location = new System.Drawing.Point(12, 113);
+            this.btnResumen.Location = new System.Drawing.Point(12, 154);
             this.btnResumen.Name = "btnResumen";
             this.btnResumen.Size = new System.Drawing.Size(173, 39);
             this.btnResumen.TabIndex = 2;
@@ -147,17 +147,17 @@ namespace DashboardRRHH
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(194, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(606, 100);
+            this.panel2.Size = new System.Drawing.Size(732, 100);
             this.panel2.TabIndex = 1;
             // 
             // lbLugar
             // 
-            this.lbLugar.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.lbLugar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbLugar.AutoSize = true;
             this.lbLugar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(64)))));
             this.lbLugar.Font = new System.Drawing.Font("Century Gothic", 24F);
             this.lbLugar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(92)))), ((int)(((byte)(231)))));
-            this.lbLugar.Location = new System.Drawing.Point(482, 25);
+            this.lbLugar.Location = new System.Drawing.Point(504, 28);
             this.lbLugar.Name = "lbLugar";
             this.lbLugar.Size = new System.Drawing.Size(112, 39);
             this.lbLugar.TabIndex = 2;
@@ -195,7 +195,7 @@ namespace DashboardRRHH
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(194, 100);
             this.panelContenedor.Name = "panelContenedor";
-            this.panelContenedor.Size = new System.Drawing.Size(606, 350);
+            this.panelContenedor.Size = new System.Drawing.Size(732, 433);
             this.panelContenedor.TabIndex = 2;
             // 
             // label1
@@ -212,7 +212,7 @@ namespace DashboardRRHH
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(926, 533);
             this.Controls.Add(this.panelContenedor);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
