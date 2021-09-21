@@ -7,20 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Negocio;
+
 namespace DashboardRRHH
 {
-    public partial class frmCrudEmpleados : Form
+    public partial class frmDepartamentos : Form
     {
-        public frmCrudEmpleados()
+        public frmDepartamentos()
         {
             InitializeComponent();
-        }
-
-        private void frmCrudEmpleados_Load(object sender, EventArgs e)
-        {
-            EmpleadoCN empleado = new EmpleadoCN();
-            dgvEmpleados.DataSource = empleado.mostrarEmpleados();
         }
     }
 }

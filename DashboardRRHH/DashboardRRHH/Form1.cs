@@ -40,17 +40,32 @@ namespace DashboardRRHH
         private void Form1_Load(object sender, EventArgs e)
         {
 
+            abrirFormularioHijo(new frmResumen());
+            lbLugar.Text = "Resumen";
         }
 
         private void btnResumen_Click(object sender, EventArgs e)
         {
-
+            abrirFormularioHijo(new frmResumen());
+            lbLugar.Text = "Resumen";
         }
 
         private void btnEmpleados_Click(object sender, EventArgs e)
         {
             abrirFormularioHijo(new frmCrudEmpleados());
             lbLugar.Text = "Empleados";
+        }
+
+        private void horaFecha_Tick(object sender, EventArgs e)
+        {
+            lbHora.Text = DateTime.Now.ToString("h:mm:ss");
+            lbFecha.Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void btnDepartamentos_Click(object sender, EventArgs e)
+        {
+            abrirFormularioHijo(new frmDepartamentos());
+            lbLugar.Text = "Departamentos";
         }
     }
 }
