@@ -16,7 +16,18 @@ namespace Negocio
             tabla = empleado.mostrarEmpleados();
             return tabla;
         }
-
+        public void eliminarEmpleado(int depN)
+        {
+            empleado.eliminarEmpleado(depN);
+        }
+        public void crearEmpleado(int empN, string apellido, string oficio, int dir, DateTime fecha, int salario, int comision, int depN)
+        {
+            empleado.crearEmpleado(depN, apellido, oficio, dir, fecha, salario, comision, depN);
+        }
+        public void editarEmpleado(int empN, string apellido, string oficio, int dir, DateTime fecha, int salario, int comision, int depN)
+        {
+            empleado.editarEmpleado(empN, apellido, oficio, dir, fecha, salario, comision, depN);
+        }
 
 
     }
