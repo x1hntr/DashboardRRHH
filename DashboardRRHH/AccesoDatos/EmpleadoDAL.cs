@@ -30,9 +30,9 @@ namespace AccesoDatos
         public void crearEmpleado(int empN, string apellido, string oficio, int dir, DateTime fecha, int salario, int comision, int depN)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "crearDepartamento";
+            comando.CommandText = "crearEmpleado";
             comando.CommandType = CommandType.StoredProcedure;
-            comando.Parameters.AddWithValue("@depN", empN);
+            comando.Parameters.AddWithValue("@empN", empN);
             comando.Parameters.AddWithValue("@apellido", apellido);
             comando.Parameters.AddWithValue("@oficio", oficio);
             comando.Parameters.AddWithValue("@dir", dir);

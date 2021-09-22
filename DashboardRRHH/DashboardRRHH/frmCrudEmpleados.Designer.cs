@@ -29,6 +29,7 @@ namespace DashboardRRHH
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -65,8 +66,8 @@ namespace DashboardRRHH
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 54.875F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 45.125F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -89,7 +90,7 @@ namespace DashboardRRHH
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 93F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(394, 444);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(433, 444);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // panel1
@@ -99,7 +100,7 @@ namespace DashboardRRHH
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 354);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(388, 87);
+            this.panel1.Size = new System.Drawing.Size(427, 87);
             this.panel1.TabIndex = 0;
             // 
             // btnEliminar
@@ -110,10 +111,10 @@ namespace DashboardRRHH
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Century Gothic", 12.75F);
             this.btnEliminar.ForeColor = System.Drawing.Color.White;
-            this.btnEliminar.Location = new System.Drawing.Point(219, 10);
+            this.btnEliminar.Location = new System.Drawing.Point(258, 10);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(112, 31);
-            this.btnEliminar.TabIndex = 1;
+            this.btnEliminar.TabIndex = 11;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -128,7 +129,7 @@ namespace DashboardRRHH
             this.btnEditar.Location = new System.Drawing.Point(42, 10);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(112, 31);
-            this.btnEditar.TabIndex = 0;
+            this.btnEditar.TabIndex = 10;
             this.btnEditar.Text = "EDITAR";
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
@@ -140,18 +141,31 @@ namespace DashboardRRHH
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(388, 345);
+            this.panel2.Size = new System.Drawing.Size(427, 345);
             this.panel2.TabIndex = 1;
             // 
             // dgvEmpleados
             // 
+            this.dgvEmpleados.AllowUserToAddRows = false;
+            this.dgvEmpleados.AllowUserToDeleteRows = false;
+            this.dgvEmpleados.AllowUserToResizeColumns = false;
+            this.dgvEmpleados.AllowUserToResizeRows = false;
+            this.dgvEmpleados.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvEmpleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvEmpleados.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(64)))));
             this.dgvEmpleados.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEmpleados.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvEmpleados.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dgvEmpleados.Location = new System.Drawing.Point(0, 0);
             this.dgvEmpleados.Name = "dgvEmpleados";
-            this.dgvEmpleados.Size = new System.Drawing.Size(386, 343);
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(92)))), ((int)(((byte)(231)))));
+            this.dgvEmpleados.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvEmpleados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvEmpleados.Size = new System.Drawing.Size(425, 343);
             this.dgvEmpleados.TabIndex = 2;
             // 
             // panel3
@@ -175,9 +189,9 @@ namespace DashboardRRHH
             this.panel3.Controls.Add(this.label1);
             this.panel3.Controls.Add(this.txtApellido);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(403, 3);
+            this.panel3.Location = new System.Drawing.Point(442, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(394, 444);
+            this.panel3.Size = new System.Drawing.Size(355, 444);
             this.panel3.TabIndex = 1;
             // 
             // txtDepartamento
@@ -187,22 +201,23 @@ namespace DashboardRRHH
             this.txtDepartamento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDepartamento.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDepartamento.ForeColor = System.Drawing.Color.White;
-            this.txtDepartamento.Location = new System.Drawing.Point(228, 150);
+            this.txtDepartamento.Location = new System.Drawing.Point(189, 150);
             this.txtDepartamento.Name = "txtDepartamento";
             this.txtDepartamento.Size = new System.Drawing.Size(143, 26);
-            this.txtDepartamento.TabIndex = 17;
+            this.txtDepartamento.TabIndex = 4;
+            this.txtDepartamento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDepartamento_KeyPress);
             // 
             // txtOficio
             // 
-            this.txtOficio.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtOficio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(64)))));
             this.txtOficio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOficio.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOficio.ForeColor = System.Drawing.Color.White;
             this.txtOficio.Location = new System.Drawing.Point(17, 87);
             this.txtOficio.Name = "txtOficio";
-            this.txtOficio.Size = new System.Drawing.Size(143, 26);
-            this.txtOficio.TabIndex = 16;
+            this.txtOficio.Size = new System.Drawing.Size(153, 26);
+            this.txtOficio.TabIndex = 1;
+            this.txtOficio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtOficio_KeyPress);
             // 
             // label7
             // 
@@ -224,7 +239,8 @@ namespace DashboardRRHH
             this.txtSalario.Location = new System.Drawing.Point(15, 277);
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(155, 26);
-            this.txtSalario.TabIndex = 14;
+            this.txtSalario.TabIndex = 6;
+            this.txtSalario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSalario_KeyPress);
             // 
             // btnGuardar
             // 
@@ -234,10 +250,10 @@ namespace DashboardRRHH
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 12.75F);
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(145, 363);
+            this.btnGuardar.Location = new System.Drawing.Point(125, 363);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(112, 31);
-            this.btnGuardar.TabIndex = 2;
+            this.btnGuardar.TabIndex = 9;
             this.btnGuardar.Text = "GUARDAR";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -248,10 +264,10 @@ namespace DashboardRRHH
             this.chkComision.AutoSize = true;
             this.chkComision.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkComision.ForeColor = System.Drawing.Color.White;
-            this.chkComision.Location = new System.Drawing.Point(228, 250);
+            this.chkComision.Location = new System.Drawing.Point(189, 250);
             this.chkComision.Name = "chkComision";
             this.chkComision.Size = new System.Drawing.Size(94, 24);
-            this.chkComision.TabIndex = 13;
+            this.chkComision.TabIndex = 7;
             this.chkComision.Text = "Comisión";
             this.chkComision.UseVisualStyleBackColor = true;
             this.chkComision.CheckedChanged += new System.EventHandler(this.chkComision_CheckedChanged);
@@ -263,10 +279,11 @@ namespace DashboardRRHH
             this.txtComision.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtComision.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtComision.ForeColor = System.Drawing.Color.White;
-            this.txtComision.Location = new System.Drawing.Point(228, 277);
+            this.txtComision.Location = new System.Drawing.Point(189, 277);
             this.txtComision.Name = "txtComision";
             this.txtComision.Size = new System.Drawing.Size(145, 26);
-            this.txtComision.TabIndex = 12;
+            this.txtComision.TabIndex = 8;
+            this.txtComision.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtComision_KeyPress);
             // 
             // label6
             // 
@@ -286,8 +303,8 @@ namespace DashboardRRHH
             this.dtpFecha.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFecha.Location = new System.Drawing.Point(15, 217);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(356, 23);
-            this.dtpFecha.TabIndex = 10;
+            this.dtpFecha.Size = new System.Drawing.Size(317, 23);
+            this.dtpFecha.TabIndex = 5;
             // 
             // label5
             // 
@@ -295,7 +312,7 @@ namespace DashboardRRHH
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(224, 126);
+            this.label5.Location = new System.Drawing.Point(185, 126);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 20);
             this.label5.TabIndex = 9;
@@ -320,8 +337,9 @@ namespace DashboardRRHH
             this.txtEmpN.ForeColor = System.Drawing.Color.White;
             this.txtEmpN.Location = new System.Drawing.Point(17, 150);
             this.txtEmpN.Name = "txtEmpN";
-            this.txtEmpN.Size = new System.Drawing.Size(157, 26);
-            this.txtEmpN.TabIndex = 6;
+            this.txtEmpN.Size = new System.Drawing.Size(153, 26);
+            this.txtEmpN.TabIndex = 3;
+            this.txtEmpN.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmpN_KeyPress);
             // 
             // label3
             // 
@@ -329,7 +347,7 @@ namespace DashboardRRHH
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(224, 64);
+            this.label3.Location = new System.Drawing.Point(185, 64);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 20);
             this.label3.TabIndex = 5;
@@ -342,10 +360,11 @@ namespace DashboardRRHH
             this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDireccion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDireccion.ForeColor = System.Drawing.Color.White;
-            this.txtDireccion.Location = new System.Drawing.Point(228, 87);
+            this.txtDireccion.Location = new System.Drawing.Point(189, 87);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(143, 26);
-            this.txtDireccion.TabIndex = 4;
+            this.txtDireccion.TabIndex = 2;
+            this.txtDireccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDireccion_KeyPress);
             // 
             // label2
             // 
@@ -379,8 +398,9 @@ namespace DashboardRRHH
             this.txtApellido.ForeColor = System.Drawing.Color.White;
             this.txtApellido.Location = new System.Drawing.Point(15, 28);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(356, 26);
+            this.txtApellido.Size = new System.Drawing.Size(317, 26);
             this.txtApellido.TabIndex = 0;
+            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
             // 
             // frmCrudEmpleados
             // 

@@ -22,7 +22,7 @@ namespace Negocio
         }
         public void crearEmpleado(int empN, string apellido, string oficio, int dir, DateTime fecha, int salario, int comision, int depN)
         {
-            empleado.crearEmpleado(depN, apellido, oficio, dir, fecha, salario, comision, depN);
+            empleado.crearEmpleado(empN, apellido, oficio, dir, fecha, salario, comision, depN);
         }
         public void editarEmpleado(int empN, string apellido, string oficio, int dir, DateTime fecha, int salario, int comision, int depN)
         {
