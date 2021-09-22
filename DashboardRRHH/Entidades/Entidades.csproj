@@ -41,6 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EConsulta1.cs" />
+    <Compile Include="EConsulta2.cs" />
+    <Compile Include="EConsulta3.cs" />
+    <Compile Include="EConsulta4.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

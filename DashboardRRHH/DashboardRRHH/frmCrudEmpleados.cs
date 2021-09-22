@@ -13,6 +13,7 @@ namespace DashboardRRHH
     public partial class frmCrudEmpleados : Form
     {
         EmpleadoCN empleado = new EmpleadoCN();
+        DepartamentosCN departamento = new DepartamentosCN();
         private string empN= null;
         bool editar = false;
         int comision = 0;
@@ -25,7 +26,9 @@ namespace DashboardRRHH
         {
           
             dgvEmpleados.DataSource = empleado.mostrarEmpleados();
+            dgvDepartamento.DataSource = departamento.mostrarDepartamentos();
             txtComision.Enabled = false;
+            txtDepartamento.Enabled = false;
            
         }
 
@@ -195,6 +198,13 @@ namespace DashboardRRHH
             }
         }
 
-       
+        private void dgvDepartamento_Click(object sender, EventArgs e)
+        {
+            if (dgvDepartamento.SelectedRows.Count != 0)
+            {
+              txtDepartamento.Text = dgvDepartamento.CurrentRow.Cells["dept_no"].Value.ToString();
+
+            }
+        }
     }
 }

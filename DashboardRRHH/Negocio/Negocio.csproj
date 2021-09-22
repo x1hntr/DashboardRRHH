@@ -34,7 +34,8 @@
     <Reference Include="AccesoDatos">
       <HintPath>..\AccesoDatos\bin\Debug\AccesoDatos.dll</HintPath>
     </Reference>
-    <Reference Include="Entidades">
+    <Reference Include="Entidades, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Entidades\bin\Debug\Entidades.dll</HintPath>
     </Reference>
     <Reference Include="System" />
@@ -47,6 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conculta1CN.cs" />
+    <Compile Include="Consulta2CN.cs" />
+    <Compile Include="Consulta3CN.cs" />
+    <Compile Include="Consulta4CN.cs" />
     <Compile Include="DepartamentosCN.cs" />
     <Compile Include="EmpleadoCN.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -30,6 +30,7 @@ namespace DashboardRRHH
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -55,12 +56,16 @@ namespace DashboardRRHH
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.dgvDepartamento = new System.Windows.Forms.DataGridView();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDepartamento)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -169,6 +174,7 @@ namespace DashboardRRHH
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.txtDepartamento);
             this.panel3.Controls.Add(this.txtOficio);
             this.panel3.Controls.Add(this.label7);
@@ -199,7 +205,7 @@ namespace DashboardRRHH
             this.txtDepartamento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDepartamento.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDepartamento.ForeColor = System.Drawing.Color.White;
-            this.txtDepartamento.Location = new System.Drawing.Point(189, 150);
+            this.txtDepartamento.Location = new System.Drawing.Point(189, 262);
             this.txtDepartamento.Name = "txtDepartamento";
             this.txtDepartamento.Size = new System.Drawing.Size(143, 26);
             this.txtDepartamento.TabIndex = 4;
@@ -211,7 +217,7 @@ namespace DashboardRRHH
             this.txtOficio.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtOficio.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtOficio.ForeColor = System.Drawing.Color.White;
-            this.txtOficio.Location = new System.Drawing.Point(17, 87);
+            this.txtOficio.Location = new System.Drawing.Point(15, 210);
             this.txtOficio.Name = "txtOficio";
             this.txtOficio.Size = new System.Drawing.Size(153, 26);
             this.txtOficio.TabIndex = 1;
@@ -222,7 +228,7 @@ namespace DashboardRRHH
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(15, 127);
+            this.label7.Location = new System.Drawing.Point(15, 239);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(98, 20);
             this.label7.TabIndex = 15;
@@ -234,7 +240,7 @@ namespace DashboardRRHH
             this.txtSalario.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSalario.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSalario.ForeColor = System.Drawing.Color.White;
-            this.txtSalario.Location = new System.Drawing.Point(15, 277);
+            this.txtSalario.Location = new System.Drawing.Point(15, 363);
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(155, 26);
             this.txtSalario.TabIndex = 6;
@@ -248,7 +254,7 @@ namespace DashboardRRHH
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Font = new System.Drawing.Font("Century Gothic", 12.75F);
             this.btnGuardar.ForeColor = System.Drawing.Color.White;
-            this.btnGuardar.Location = new System.Drawing.Point(125, 363);
+            this.btnGuardar.Location = new System.Drawing.Point(124, 403);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(112, 31);
             this.btnGuardar.TabIndex = 9;
@@ -262,7 +268,7 @@ namespace DashboardRRHH
             this.chkComision.AutoSize = true;
             this.chkComision.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkComision.ForeColor = System.Drawing.Color.White;
-            this.chkComision.Location = new System.Drawing.Point(189, 250);
+            this.chkComision.Location = new System.Drawing.Point(189, 339);
             this.chkComision.Name = "chkComision";
             this.chkComision.Size = new System.Drawing.Size(94, 24);
             this.chkComision.TabIndex = 7;
@@ -277,7 +283,7 @@ namespace DashboardRRHH
             this.txtComision.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtComision.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtComision.ForeColor = System.Drawing.Color.White;
-            this.txtComision.Location = new System.Drawing.Point(189, 277);
+            this.txtComision.Location = new System.Drawing.Point(189, 363);
             this.txtComision.Name = "txtComision";
             this.txtComision.Size = new System.Drawing.Size(145, 26);
             this.txtComision.TabIndex = 8;
@@ -288,7 +294,7 @@ namespace DashboardRRHH
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(11, 194);
+            this.label6.Location = new System.Drawing.Point(15, 291);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(143, 20);
             this.label6.TabIndex = 11;
@@ -299,7 +305,7 @@ namespace DashboardRRHH
             this.dtpFecha.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpFecha.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Location = new System.Drawing.Point(15, 217);
+            this.dtpFecha.Location = new System.Drawing.Point(15, 314);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(317, 23);
             this.dtpFecha.TabIndex = 5;
@@ -310,7 +316,7 @@ namespace DashboardRRHH
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(185, 126);
+            this.label5.Location = new System.Drawing.Point(185, 239);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(117, 20);
             this.label5.TabIndex = 9;
@@ -321,7 +327,7 @@ namespace DashboardRRHH
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(13, 254);
+            this.label4.Location = new System.Drawing.Point(15, 340);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 20);
             this.label4.TabIndex = 7;
@@ -333,7 +339,7 @@ namespace DashboardRRHH
             this.txtEmpN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmpN.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmpN.ForeColor = System.Drawing.Color.White;
-            this.txtEmpN.Location = new System.Drawing.Point(17, 150);
+            this.txtEmpN.Location = new System.Drawing.Point(15, 262);
             this.txtEmpN.Name = "txtEmpN";
             this.txtEmpN.Size = new System.Drawing.Size(153, 26);
             this.txtEmpN.TabIndex = 3;
@@ -345,7 +351,7 @@ namespace DashboardRRHH
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(185, 64);
+            this.label3.Location = new System.Drawing.Point(185, 190);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 20);
             this.label3.TabIndex = 5;
@@ -358,7 +364,7 @@ namespace DashboardRRHH
             this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDireccion.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDireccion.ForeColor = System.Drawing.Color.White;
-            this.txtDireccion.Location = new System.Drawing.Point(189, 87);
+            this.txtDireccion.Location = new System.Drawing.Point(189, 213);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(143, 26);
             this.txtDireccion.TabIndex = 2;
@@ -369,7 +375,7 @@ namespace DashboardRRHH
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(15, 62);
+            this.label2.Location = new System.Drawing.Point(15, 187);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 20);
             this.label2.TabIndex = 3;
@@ -380,7 +386,7 @@ namespace DashboardRRHH
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(13, 5);
+            this.label1.Location = new System.Drawing.Point(11, 138);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(69, 20);
             this.label1.TabIndex = 1;
@@ -394,11 +400,44 @@ namespace DashboardRRHH
             this.txtApellido.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtApellido.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtApellido.ForeColor = System.Drawing.Color.White;
-            this.txtApellido.Location = new System.Drawing.Point(15, 28);
+            this.txtApellido.Location = new System.Drawing.Point(15, 161);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(317, 26);
             this.txtApellido.TabIndex = 0;
             this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
+            // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.dgvDepartamento);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(353, 135);
+            this.panel4.TabIndex = 16;
+            // 
+            // dgvDepartamento
+            // 
+            this.dgvDepartamento.AllowUserToAddRows = false;
+            this.dgvDepartamento.AllowUserToDeleteRows = false;
+            this.dgvDepartamento.AllowUserToResizeColumns = false;
+            this.dgvDepartamento.AllowUserToResizeRows = false;
+            this.dgvDepartamento.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDepartamento.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(64)))));
+            this.dgvDepartamento.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvDepartamento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDepartamento.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDepartamento.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.dgvDepartamento.Location = new System.Drawing.Point(0, 0);
+            this.dgvDepartamento.Name = "dgvDepartamento";
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(57)))));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(92)))), ((int)(((byte)(231)))));
+            this.dgvDepartamento.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvDepartamento.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDepartamento.Size = new System.Drawing.Size(351, 133);
+            this.dgvDepartamento.TabIndex = 3;
+            this.dgvDepartamento.Click += new System.EventHandler(this.dgvDepartamento_Click);
             // 
             // frmCrudEmpleados
             // 
@@ -418,6 +457,8 @@ namespace DashboardRRHH
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDepartamento)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -449,5 +490,7 @@ namespace DashboardRRHH
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtDepartamento;
         private System.Windows.Forms.TextBox txtOficio;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.DataGridView dgvDepartamento;
     }
 }

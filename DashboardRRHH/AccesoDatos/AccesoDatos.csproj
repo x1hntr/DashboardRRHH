@@ -45,6 +45,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionBD.cs" />
+    <Compile Include="Consulta1DAL.cs" />
+    <Compile Include="Consulta2DAL.cs" />
+    <Compile Include="Consulta3DAL.cs" />
+    <Compile Include="Consulta4DAL.cs" />
     <Compile Include="DepartamentosDAL.cs" />
     <Compile Include="EmpleadoDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
