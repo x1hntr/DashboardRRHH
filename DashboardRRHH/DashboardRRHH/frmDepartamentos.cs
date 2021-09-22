@@ -75,5 +75,7 @@ namespace DashboardRRHH
             else
                 MessageBox.Show("Selecciones una fila para editar");
         }
+
+        private void
     }
 }
