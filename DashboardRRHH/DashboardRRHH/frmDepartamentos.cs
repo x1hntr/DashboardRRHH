@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Negocio;
+using AccesoDatos;
+using System.Collections;
+
 namespace DashboardRRHH
 {
     public partial class frmDepartamentos : Form
@@ -15,6 +18,10 @@ namespace DashboardRRHH
         DepartamentosCN dep = new DepartamentosCN();
         private string depN = null;
         bool editar = false;
+
+        ArrayList departamentos = new ArrayList();
+        ArrayList numEmpleados =  new ArrayList();
+
         public frmDepartamentos()
         {
             InitializeComponent();
@@ -76,6 +83,9 @@ namespace DashboardRRHH
                 MessageBox.Show("Selecciones una fila para editar");
         }
 
-        private void
+        private void label4_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

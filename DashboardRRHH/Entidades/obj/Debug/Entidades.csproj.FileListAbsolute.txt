@@ -1,0 +1,6 @@
+C:\Users\x1dxn\Documents\Repositories\DashboardRRHH\DashboardRRHH\Entidades\bin\Debug\Entidades.dll
+C:\Users\x1dxn\Documents\Repositories\DashboardRRHH\DashboardRRHH\Entidades\bin\Debug\Entidades.pdb
+C:\Users\x1dxn\Documents\Repositories\DashboardRRHH\DashboardRRHH\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\x1dxn\Documents\Repositories\DashboardRRHH\DashboardRRHH\Entidades\obj\Debug\Entidades.dll
+C:\Users\x1dxn\Documents\Repositories\DashboardRRHH\DashboardRRHH\Entidades\obj\Debug\Entidades.pdb
+C:\Users\x1dxn\Documents\Repositories\DashboardRRHH\DashboardRRHH\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
